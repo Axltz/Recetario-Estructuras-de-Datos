@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Makefile",
+            "type": "shell",
+            "command": "mingw32-make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila todo el proyecto usando Makefile"
+        },
+        {
+            "label": "Ejecutar programa",
+            "type": "shell",
+            "command": "mingw32-make run",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
